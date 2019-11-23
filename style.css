@@ -1,0 +1,193 @@
+body{
+    background-image: url(br.jpg);
+    height: 100vh;
+    background-size: cover;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menu-bar{
+    background: #63235E;
+    text-align: center;
+    padding: 10px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 25px 20px 25px 20px;
+    padding: 5px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover{
+    background: #f1c40f;
+    border-radius: 3px
+
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.menu-bar-1{
+    display: none;
+}
+.menu-bar ul li:hover .menu-bar-1{
+    display: block;
+    position: absolute;
+    background-color: #e67e22;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .menu-bar-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .menu-bar-1 ul li{
+    width: 150px;
+    padding: 2px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+.menu-bar ul li:hover .menu-bar-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .menu-bar-1 ul li a:hover{
+    color: #2c3e50;
+}
+.fa-angle-right{
+    float: right;
+}
+.menu-bar-2{
+    display: none;
+
+}
+.hover-me:hover .menu-bar-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #f39c12;
+}
+#login-box{
+    position: relative;
+    margin: 10% auto;
+    height: 400px;
+    width: 800px;
+    background: rgba(0, 0, 0, .5);
+    font-weight: bold;
+
+
+}
+#login-box input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#login-box input[type="text"],
+#login-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:white;
+    height: 40px;
+    display: block;
+    outline: none;
+    color: white;
+    transition: 0.2s ease;
+}
+.left-box{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    color: white;
+    height: 420px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+.left-box button{align-content: center;margin-top: 32px;margin-left: 279px;width: 50%;padding: 5px 12px;background-color: #04bf3b;color: #fff;border: navajowhite;margin-bottom: 4px;}
+
+h1{
+    margin: 12px 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+#login-box input[type="submit"]{
+    margin-bottom: 28px;
+    width: 50%;
+    height: 32px;
+    border: none;
+    border-radius: 2px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    background: #ff9f43;
+    margin-top: 91px;
+    margin-left: 295px;
+}
+#login-box input[type="submit"]:hover,
+#login-box input[type="submit"]:focus{
+    background: #54a0ff;
+    transition: 0.2s ease;
+}
+
+.right-box{
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+    margin-left: 203px;
+}
+.right-box .Signinwith{
+    /*! display: block; */
+    /*! margin-bottom: 40px; */
+    /*! font-size: 28px; */
+    /*! color: black; */
+    /*! text-align: center; */
+    /*! text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); */
+}
+button.social{
+    margin: 20px;
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.facebook{
+    background: #2980b9;
+}
+.twitter{
+     background: #74b9ff;
+}
+.google{
+    background: #e84118;
+}
